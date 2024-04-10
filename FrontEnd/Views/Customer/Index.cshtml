@@ -1,0 +1,73 @@
+﻿@model IEnumerable<FrontEnd.Models.CustomerViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TerritoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rowguid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.PersonId)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.StoreId)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TerritoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rowguid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedDate)
+                </td>
+
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CustomerId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CustomerId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CustomerId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
