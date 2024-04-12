@@ -40,10 +40,7 @@ namespace FrontEnd.Helpers.Implementations
                 AccountNumber = customer.AccountNumber,
                 Rowguid = customer.Rowguid,
                 ModifiedDate = customer.ModifiedDate,
-                Person = customer.Person,
-                SalesOrderHeaders = customer.SalesOrderHeaders,
-                Store = customer.Store,
-                Territory = customer.Territory
+                
             };
         }
 
@@ -58,10 +55,7 @@ namespace FrontEnd.Helpers.Implementations
                 AccountNumber = customer.AccountNumber,
                 Rowguid = customer.Rowguid,
                 ModifiedDate = customer.ModifiedDate,
-                Person = customer.Person,
-                SalesOrderHeaders = customer.SalesOrderHeaders,
-                Store = customer.Store,
-                Territory = customer.Territory
+               
             };
         }
 

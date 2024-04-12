@@ -34,11 +34,7 @@ namespace BackEnd.Services.Implementations
                 TerritoryId = customer.TerritoryId,
                 AccountNumber = customer.AccountNumber,
                 Rowguid = customer.Rowguid,
-                ModifiedDate = customer.ModifiedDate,
-                Person = customer.Person,
-                SalesOrderHeaders = customer.SalesOrderHeaders,
-                Store = customer.Store,
-                Territory = customer.Territory
+                ModifiedDate = customer.ModifiedDate
             };
         }
 
@@ -52,11 +48,7 @@ namespace BackEnd.Services.Implementations
                 TerritoryId = customer.TerritoryId,
                 AccountNumber = customer.AccountNumber,
                 Rowguid = customer.Rowguid,
-                ModifiedDate = customer.ModifiedDate,
-                Person = customer.Person,
-                SalesOrderHeaders = customer.SalesOrderHeaders,
-                Store = customer.Store,
-                Territory = customer.Territory
+                ModifiedDate = customer.ModifiedDate
             };
         }
         public bool DeleteCustomer(CustomerModel customer)

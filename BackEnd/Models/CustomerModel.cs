@@ -36,12 +36,5 @@ namespace BackEnd.Models
         /// </summary>
         public DateTime ModifiedDate { get; set; }
 
-        public virtual Person? Person { get; set; }
-
-        public virtual ICollection<SalesOrderHeader> SalesOrderHeaders { get; set; } = new List<SalesOrderHeader>();
-
-        public virtual Store? Store { get; set; }
-
-        public virtual SalesTerritory? Territory { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackEnd.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
@@ -40,7 +41,7 @@ namespace BackEnd.Controllers
 
             if (result)
             {
-                return "Categoría Agregada Correctamente.";
+                return "Customer Agregada Correctamente.";
             }
             return "Hubo un error al agregar  la entidad.";
 
@@ -54,7 +55,7 @@ namespace BackEnd.Controllers
 
             if (result)
             {
-                return "Categoría Editada Correctamente.";
+                return "Customer Editada Correctamente.";
             }
             return "Hubo un error al editar  la entidad.";
         }
@@ -69,7 +70,7 @@ namespace BackEnd.Controllers
 
             if (result)
             {
-                return "Categoría Eliminada Correctamente.";
+                return "Customer Eliminada Correctamente.";
             }
             return "Hubo un error al eliminar  la entidad.";
 
